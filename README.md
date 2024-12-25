@@ -1,1 +1,1 @@
-# nest_next_bp2
+# Projekat iz Baza Podataka 2 (BP2)
