@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="nest_next/src"/>
+	<classpathentry kind="lib" path="nest_next/lib/HikariCP-6.2.1.jar"/>
+	<classpathentry kind="lib" path="nest_next/lib/ojdbc17.jar"/>
+	<classpathentry kind="lib" path="nest_next/lib/slf4j-api-1.7.32.jar"/>
+	<classpathentry kind="lib" path="nest_next/lib/slf4j-simple-1.7.21.jar"/>
+	<classpathentry kind="output" path="nest_next/bin"/>
+</classpath>
