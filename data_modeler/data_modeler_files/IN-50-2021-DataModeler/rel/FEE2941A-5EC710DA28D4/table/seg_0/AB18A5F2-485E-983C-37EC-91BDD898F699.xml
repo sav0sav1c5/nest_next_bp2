@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB18A5F2-485E-983C-37EC-91BDD898F699" name="Račun">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>D90208C2-90B8-5FD6-CF92-703698305377</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RAC" id="DBE43EBD-16D4-E7B1-6FCF-51CBAD2AE7A8">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>FD1195A0-1054-D3B7-BCB1-5AB28A4A17A4</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IZN_RAC" id="C2E49A95-6354-B961-F228-ADFF9227F306">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>B67E5EAC-8FB2-DD3E-ADD7-22683738545C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAC_RAC" id="056C00A7-5959-1C58-3757-9E25DBEA74B1">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>0CD9361F-6159-DE2F-8CF6-CD0A42F2CF96</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_DOSP_RAC" id="489F38A2-64EF-5774-1DCA-4EA0CF14CC56">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>96821715-DB9B-AE3A-4BEE-689B8BE7D3CF</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROK_ISP_RAC" id="4FB036A5-EEB4-2500-9F71-39535B1343E7">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>4C1BFB1E-0CE4-32BB-BF43-C61912F71529</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pružalac_usluga_ID_PRU" id="37E8A683-E7F9-C9CA-1D48-366EFF8C1E48">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>69C81FEC-2F6B-F8D1-989E-8FA215BE4D5A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="757509AA-1A25-456B-1E06-21DF7F746A2A" referredColumn="5607183E-636C-D1B5-2FC8-A4F598E51429"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E82906EE-6CAF-C486-FFA7-8C7ABE49C376" name="Račun_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>31347C76-4293-1430-E5A3-DD7C3E2887E0</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBE43EBD-16D4-E7B1-6FCF-51CBAD2AE7A8"/>
+<colUsage columnID="37E8A683-E7F9-C9CA-1D48-366EFF8C1E48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB79D278-4251-D160-D93D-840D6746AEC2" name="Račun_Pružalac_usluga_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>731AA8AE-03FC-B2BD-9E23-A0226FEE75C7</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37E8A683-E7F9-C9CA-1D48-366EFF8C1E48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

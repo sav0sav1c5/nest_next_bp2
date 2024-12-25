@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2519CD20-D07A-A7AC-A745-DC2BEF21B307" name="Ugovor_o_zakupu">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>00B5A7A3-2D1B-DD72-B51E-652C4F9AB625</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UG" id="396D00D5-9EE4-950F-C81C-BB48AAA72E45">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>DAFFD556-03C5-1ACB-58EE-21951EFF36CC</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_POC_UG" id="9991BFB7-B8CA-9AD0-EB1D-3DDABD6750A0">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E07BA29C-6939-6027-8443-E2200403D050</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAT_KR_UG" id="D3246032-F184-62BF-1894-9777942AF3AA">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>738BF28D-9E06-01F1-FA47-EF4C999B5083</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZAKUP_UG" id="96CE227C-80C0-8C3F-D601-8C1FBE0691D2">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>9E2BE1FD-40B9-2845-CFE0-B0F8D5B8D378</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STAN_UG" id="7D0C98D1-055F-4C18-44B8-3DAAE654C27F">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>656AA293-07CA-8713-0F14-A7C8AF563EDA</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STANOD_UG" id="D49CE0BF-FA8E-711F-C8F6-A6B96019F22E">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>9F49B111-E016-C221-7790-FEA162A2DA91</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGNT_UG" id="A5FF41A3-F0F8-53BF-EE06-617D54208659">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>57488C85-FD3B-34DB-C2D3-E9147357D89F</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_UG" id="A4E70474-98B4-BE98-BFA1-6470A37081C9">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>AA77D0B8-1C63-81BD-105D-F12F4C89D318</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stan_ID_ST" id="9F478904-32F0-C546-6204-C73645F77C57">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>C1C86E13-F967-41AA-35D2-605FE2BFA88D</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A48D181-DFD2-7D53-63CE-5CE794A94DCE" referredColumn="07E26289-16A5-AB5F-AAA9-A3BC50DDD097"/>
+</associations>
+</Column>
+<Column name="Sklapaju_Sklapaju_ID" id="4197186C-5582-4DC1-37CE-B0A5ED6BD332">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="361424FB-F589-AA23-39E6-0B0FDEF063EE" referredColumn="AC6552A8-BD9E-B636-907B-3B892798B97D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="255A9B7B-B88A-3AD1-E6A5-B59D8F65A901" name="Ugovor_o_zakupu_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>0AB6FDCC-C25A-99F5-8439-A569E3ACEB26</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396D00D5-9EE4-950F-C81C-BB48AAA72E45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="579839FA-B3E8-CD96-C90C-7B8F309DCEE3" name="Ugovor_o_zakupu__IDX">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>270EF3E0-71BB-88FC-5B9C-8E26748E6F20</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4197186C-5582-4DC1-37CE-B0A5ED6BD332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FB71945-15DA-2F63-DEDE-2F3743AA3F6D" name="Ugovor_o_zakupu_Stan_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>A699B4D6-BD0A-2F56-FDE8-3CBE986CECE3</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F478904-32F0-C546-6204-C73645F77C57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC569666-B8A7-83E2-F82F-DB07F57A4167" name="Ugovor_o_zakupu_Sklapaju_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>270EF3E0-71BB-88FC-5B9C-8E26748E6F20</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4197186C-5582-4DC1-37CE-B0A5ED6BD332"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

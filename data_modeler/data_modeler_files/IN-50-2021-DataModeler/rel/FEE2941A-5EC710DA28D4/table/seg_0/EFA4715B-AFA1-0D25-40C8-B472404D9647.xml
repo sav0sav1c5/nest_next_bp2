@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFA4715B-AFA1-0D25-40C8-B472404D9647" name="Korisnik">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>714D48F9-6E3E-1CA1-ADD9-21B14B2A2469</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_KOR" id="EC22A6EF-23F6-3EA5-BE44-5E986026662D">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IME_KOR" id="787F4F7B-CA5F-E03C-5AF4-F65EC5242A22">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>81C7F732-1AD2-F190-9DCE-62A49392FDE5</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRZ_KOR" id="717F2090-BA1F-D5E6-0875-0DD6A648DA0E">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>7179CF08-18F1-CDBF-9994-D19BE19490FB</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL_KOR" id="2D056510-BF5E-4CAF-15E8-19434CCABE31">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>9138ABF0-BB25-EBDB-D5CF-90878BDE955B</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIP_KOR" id="324448FA-6E7F-5DA4-608B-D741882F8E13">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-21 11:18:49 UTC</createdTime>
+<generatorID>CCD48C6D-06D0-E261-C1E2-688164FF196A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Korisnik_TYPE" id="0CC8E466-A5CE-3869-4820-A6A8FB6A72BA">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-21 11:24:29 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<constraintName>CH_INH_Korisnik</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Stanodavac" description="entity Stanodavac"/>
+<valueDef value="Zakupac" description="entity Zakupac"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BA43FCB-B4C9-5ACB-8A48-7BB2CB03B912" name="Korisnik_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E84DA94B-E5EE-B904-E502-EB272F87FCA8</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC22A6EF-23F6-3EA5-BE44-5E986026662D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

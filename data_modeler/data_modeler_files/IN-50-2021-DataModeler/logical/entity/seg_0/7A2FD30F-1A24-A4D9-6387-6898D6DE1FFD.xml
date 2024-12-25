@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A2FD30F-1A24-A4D9-6387-6898D6DE1FFD" name="Pružalac usluga">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:12:13 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PRU" id="BA07775F-2C69-54A5-D85B-7EEB3FA70EE0">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:12:37 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IME_PRU" id="99B0B2BE-E176-F378-20C7-DEFFEAB6427B">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:12:39 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KONT_INF_PRU" id="37F58DC0-5E47-C1BC-A610-16828A7A9164">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:12:39 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZ_USL_PRU" id="8C84437A-9BBA-6CA1-E544-7374DB5A8524">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:12:40 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A823B47A-4A53-FEC4-C478-89030170A9FA" name="Pružalac usluga PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:14:20 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BA07775F-2C69-54A5-D85B-7EEB3FA70EE0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

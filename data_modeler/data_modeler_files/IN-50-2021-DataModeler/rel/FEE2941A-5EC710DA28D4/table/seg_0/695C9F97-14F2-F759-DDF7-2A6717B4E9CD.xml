@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="695C9F97-14F2-F759-DDF7-2A6717B4E9CD" name="angažuje">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Agent_IG_AGE" id="65BC7C23-A364-8AD8-E25A-073D431214E9">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82C0DC98-B570-B245-63C1-3A368A431A7F" referredColumn="640653A1-75CB-0A5F-3219-7C829A6971F9"/>
+</associations>
+</Column>
+<Column name="Stanodavac_ID_KOR" id="E58BBFE5-029D-80CB-3278-015497F75DFA">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F63462E-9B34-8D84-9092-969B4C1AEBA3" referredColumn="1500BA70-78AF-5CEF-7A29-588A6B620A5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4929C08C-52B4-B14A-60E4-C12BC8A22180" name="angažuje_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65BC7C23-A364-8AD8-E25A-073D431214E9"/>
+<colUsage columnID="E58BBFE5-029D-80CB-3278-015497F75DFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="100FBA24-CD52-2329-A02F-5467016C1997" name="angažuje_Agent_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E8B15E4A-EBD4-06D1-E11E-091740955A2C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65BC7C23-A364-8AD8-E25A-073D431214E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A58717-993A-5E53-DC05-4F525FC25863" name="angažuje_Stanodavac_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E8B15E4A-EBD4-06D1-E11E-091740955A2C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E58BBFE5-029D-80CB-3278-015497F75DFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

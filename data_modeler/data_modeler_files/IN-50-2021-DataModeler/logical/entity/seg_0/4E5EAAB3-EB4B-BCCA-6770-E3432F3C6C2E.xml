@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E5EAAB3-EB4B-BCCA-6770-E3432F3C6C2E" name="Poruka">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_POR" id="AF6E81A1-36DB-F56E-BC7B-851D4D0BEDA6">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:27 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SADR_POR" id="16EF486B-7D4C-1DBE-8A82-8B80FB6E0BCC">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:27 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POS_POR" id="A8494A6A-BD1E-2862-6300-8C126A8077BD">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:27 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRIM_POR" id="EAF9134A-6DF5-9619-6AA7-BCE737BFFFA4">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:29 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_KOR" id="B3A0ACB8-01C8-2738-B27B-B363975B8FC3">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:33:21 UTC</createdTime>
+<generatorID>1D71739A-A0B3-A491-D121-C816F882741F</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_KOR1" id="55507B0F-BB26-E773-2F41-DC45635E2E36">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:34:01 UTC</createdTime>
+<generatorID>70C08034-6352-D5DE-3717-7055B2AE25EA</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BEFFA7E-FB77-7A55-EE65-7250CB1D33F7" name="Poruka PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:21:45 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF6E81A1-36DB-F56E-BC7B-851D4D0BEDA6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

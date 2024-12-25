@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="728C3587-D6C4-36F9-674A-365A667B4EFE" name="Recenzija">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>2278D533-4683-4A87-C135-CF6EF6E18E66</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_REC" id="403BF3FA-89CC-09CA-448C-ACE52A8C82B8">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>3612B078-7E61-4CDA-246C-414662451198</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEKST_REC" id="D0F01D7F-CB46-41AD-1932-073B9F55F42D">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>A3DB172C-3314-77DC-DB9B-DE9B61319640</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCENA_REC" id="23FFDB8D-E707-FC9F-7058-CADD76450DA1">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>75DB36B8-36D1-388C-7C3A-69B9275B6102</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZAKUP_REC" id="079C8E77-1EB7-73C7-4E96-C91D310A8122">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>DA0EB0FD-CFD3-AFE3-8C9C-66E06AAF4C28</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STAN_REC" id="D8CE1E9F-62EC-0DAE-920C-7270BE5C2AD5">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>175799A4-E1EB-AB9C-1923-CE48E7C1B320</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STANOD_REC" id="A3FB1AE9-BF9B-6544-CFE6-C863C44CFF9C">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>302C0AD5-105E-9964-FBAE-E3E79DA85AC6</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sklapaju_Sklapaju_ID" id="DD27DE11-29F2-C91F-45F0-2B79E244B0EC">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F664F1A1-EE77-0E4D-B001-EC7E6770D59A" referredColumn="AC6552A8-BD9E-B636-907B-3B892798B97D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41939FD8-7938-26EF-196A-B9A2DAD19CC5" name="Recenzija_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>17675927-F774-CFC1-A59C-681FD00687D8</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="403BF3FA-89CC-09CA-448C-ACE52A8C82B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDBF9787-B076-E6F6-C719-2EEA562FB88D" name="Recenzija__IDX">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>049C0051-2210-50AB-1CBF-2BB6B4C33440</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DD27DE11-29F2-C91F-45F0-2B79E244B0EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D28BE41C-EABC-07AA-EFF2-FD6DBCBC50E4" name="Recenzija_Sklapaju_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>049C0051-2210-50AB-1CBF-2BB6B4C33440</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD27DE11-29F2-C91F-45F0-2B79E244B0EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

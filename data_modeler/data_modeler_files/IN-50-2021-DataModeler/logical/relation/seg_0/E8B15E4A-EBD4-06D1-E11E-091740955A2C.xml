@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="angažuje" directorySegmentName="seg_0" id="E8B15E4A-EBD4-06D1-E11E-091740955A2C">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:35:09 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>33DB48D5-0977-48BA-4A7B-419056ED7CF7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>43812C25-2313-1CF7-DD46-CA95CEFE9C72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

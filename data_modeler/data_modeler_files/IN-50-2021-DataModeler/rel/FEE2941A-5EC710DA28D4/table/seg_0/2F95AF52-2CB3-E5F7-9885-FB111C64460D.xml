@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F95AF52-2CB3-E5F7-9885-FB111C64460D" name="Zakupac">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>1525F258-62E8-677A-BE94-FB76A83118D6</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_KOR" id="4D92022A-FE10-4564-E0D3-18C226F0ED5F">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13C75856-D8E6-5DB6-4E8B-87BAED65A64E" referredColumn="EC22A6EF-23F6-3EA5-BE44-5E986026662D"/>
+</associations>
+</Column>
+<Column name="PREF_ZAK" id="286AD34B-93A5-BA27-686B-2F07CBC0839A">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>113CFCEE-F34F-C7E3-9B9A-2AEAACBFC672</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D85ABCDF-CCAF-EB50-A543-152CD306B3DE" name="Zakupac_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E84DA94B-E5EE-B904-E502-EB272F87FCA8</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D92022A-FE10-4564-E0D3-18C226F0ED5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44691FBD-55F8-E9BC-0692-D0DC0AA61ADB" name="Zakupac_Korisnik_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>035144BA-85EF-B6A1-49DD-15C171C9AE16</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D92022A-FE10-4564-E0D3-18C226F0ED5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

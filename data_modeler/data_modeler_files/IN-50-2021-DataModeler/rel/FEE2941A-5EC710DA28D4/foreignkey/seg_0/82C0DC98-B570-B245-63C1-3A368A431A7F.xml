@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82C0DC98-B570-B245-63C1-3A368A431A7F" containerWithKeyObject="695C9F97-14F2-F759-DDF7-2A6717B4E9CD" localFKIndex="100FBA24-CD52-2329-A02F-5467016C1997" name="angažuje_Agent_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E8B15E4A-EBD4-06D1-E11E-091740955A2C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<referredTableLongName>Agent</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>28287D69-AB96-BE9C-8CA4-B708903325EF</referredTableID>
+<keyObject>2156FC37-EC67-F93E-E50D-F28226A3803A</keyObject>
+<referredKeyID>2156FC37-EC67-F93E-E50D-F28226A3803A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IG_AGE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

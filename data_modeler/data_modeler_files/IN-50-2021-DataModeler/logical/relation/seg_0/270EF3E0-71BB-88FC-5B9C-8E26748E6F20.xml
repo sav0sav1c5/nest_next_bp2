@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="zaključuje se" directorySegmentName="seg_0" id="270EF3E0-71BB-88FC-5B9C-8E26748E6F20">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:34:41 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C69AE0A2-1182-EB9C-C625-C8EB8ECD66B4</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>00B5A7A3-2D1B-DD72-B51E-652C4F9AB625</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C18ED047-9211-7E8E-119F-2F9A8CCB9B6A" name="usluzivanje">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Stan_ID_ST" id="5EE6BA20-732E-24EA-BCC2-C13E090C87CA">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C683D714-5D65-9FF6-5CB2-E30581FC7AD4" referredColumn="07E26289-16A5-AB5F-AAA9-A3BC50DDD097"/>
+</associations>
+</Column>
+<Column name="Pružalac_usluga_ID_PRU" id="CAD41600-9158-E4FD-4DAF-44ABA10E01C5">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00D2CA7E-B5BD-37CD-9908-CB51DC9D8B71" referredColumn="5607183E-636C-D1B5-2FC8-A4F598E51429"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C93E70A-D8D0-457C-DFB5-6122856DC861" name="usluzivanje_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EE6BA20-732E-24EA-BCC2-C13E090C87CA"/>
+<colUsage columnID="CAD41600-9158-E4FD-4DAF-44ABA10E01C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB24AA57-8748-DB29-EA3C-7EC0E5A946A3" name="usluzivanje_Stan_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>AD43619A-4E70-E896-F53A-FF4526DBDE33</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EE6BA20-732E-24EA-BCC2-C13E090C87CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85A4A2C0-35E9-82D4-930D-EB534752ECB2" name="usluzivanje_Pružalac_usluga_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>AD43619A-4E70-E896-F53A-FF4526DBDE33</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAD41600-9158-E4FD-4DAF-44ABA10E01C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

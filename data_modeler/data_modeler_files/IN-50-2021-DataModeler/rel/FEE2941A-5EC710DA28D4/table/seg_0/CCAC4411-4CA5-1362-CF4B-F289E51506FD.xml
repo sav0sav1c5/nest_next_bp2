@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCAC4411-4CA5-1362-CF4B-F289E51506FD" name="Stan">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>D1A299AF-81C2-8F14-48C6-A351D47E7828</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ST" id="07E26289-16A5-AB5F-AAA9-A3BC50DDD097">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>65E314DD-FD11-0854-319E-11ACA987B333</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POVR_ST" id="A6F66576-4ABC-43E8-5892-859C277B9193">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>92066CF2-174D-453C-6D9B-E251AEC5B5E2</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CENA_ST" id="8D5509C8-F32A-0974-FC49-4BC2ED74BBF2">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>27523FC6-2103-35C8-537C-49192611B098</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCENA_ST" id="2E7D72FF-3E50-97DD-052E-B51533BA707D">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>C8B6F714-2605-D817-E2E7-66F7CF15A363</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOSTUP_ST" id="6B77B3E1-57B7-61F0-A4E2-CEFE320D5CEF">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>48BFE850-F52A-2F42-B0AD-A3B703874BCC</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa_ID_ADR" id="5DC41A39-A0C1-0652-3650-1972F7CDA285">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>72BA731D-A0B8-8BCB-ADC8-463C831D5B7A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3462A590-1FF3-3105-9DE8-3A4B42C32225" referredColumn="0BF3C4D3-B08A-5DD5-6262-AEAB22536F4D"/>
+</associations>
+</Column>
+<Column name="Kategorija_ID_KAT" id="612D5229-EAD0-1E2C-B0DE-905D405D13CF">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>50EB0364-E0B8-4FA7-1346-AFDCB3A10F67</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E689AFB-599A-E9D5-B7F9-6A19982A135D" referredColumn="46865A21-603C-3204-F3F2-3A555DFF3AAB"/>
+</associations>
+</Column>
+<Column name="Opremljenost_ID_OPR" id="1BF38C4D-D9C2-ACD4-1877-003E33723C3F">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>6E33E653-CE20-12B3-0933-D03E263A304D</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FCAD84D-3735-811A-24C8-A0EE5C9C981F" referredColumn="9EA38DEE-CD04-AA91-8258-74DAE8B97211"/>
+</associations>
+</Column>
+<Column name="Stanodavac_ID_KOR" id="6ADCAF6D-9DDE-84F9-810D-37C3709CC872">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>0185E20C-B4BB-48DA-93EF-EE137686116A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8191E15E-3688-F988-064D-5C85E3F10B7D" referredColumn="1500BA70-78AF-5CEF-7A29-588A6B620A5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="895F9B18-CB3D-BA50-A5E8-C1D2EA85D0FE" name="Stan_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>0C1BB622-A6C2-ACA8-06DB-F6FEA1706982</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07E26289-16A5-AB5F-AAA9-A3BC50DDD097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F038497D-AB5C-CC76-2927-D2950F6C0678" name="Stan_Opremljenost_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>4D185A0F-E930-FD31-38D1-FAFB3B769C69</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BF38C4D-D9C2-ACD4-1877-003E33723C3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0F05C3D-EE76-47BF-45B3-A4A0C961DDF0" name="Stan_Adresa_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>63D4C4A0-5A34-AF1B-70C5-B4D13FD89997</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DC41A39-A0C1-0652-3650-1972F7CDA285"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7654F246-3FD8-D0E6-8AE9-A95190A4BD79" name="Stan_Stanodavac_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>1752A619-F42A-CD57-928E-A8CC1DC33236</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ADCAF6D-9DDE-84F9-810D-37C3709CC872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3B8DFE5-4830-1DBA-9384-C9D2EF7C472B" name="Stan_Kategorija_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>189B3561-7A3E-23FC-FD4E-3B2D5C3C233A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612D5229-EAD0-1E2C-B0DE-905D405D13CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHK_OCENA_RANGE" directorySegmentName="seg_0" id="07662E28-884B-F376-8DD7-AFEA59727867">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-22 03:11:00 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<rule><![CDATA[OCENA_ST BETWEEN 1.0 AND 5.0
+]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="biva izdat" directorySegmentName="seg_0" id="435A3659-DA1D-D056-2766-2BAD2D414404">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:35:14 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<sourcePk>0C1BB622-A6C2-ACA8-06DB-F6FEA1706982</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D1A299AF-81C2-8F14-48C6-A351D47E7828</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C69AE0A2-1182-EB9C-C625-C8EB8ECD66B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4373021B-EC05-5FA3-0408-D370DD95994B" name="Zahtev_za_obilazak">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>93832DF9-515A-98B5-A5A1-AA65F554417B</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OBI" id="D2B160F2-0D53-C252-091B-CA616CFA9D52">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>FA282AB0-95E3-3822-C089-ABBC5ADEF5B3</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATVR_OBI" id="7085F622-2756-2F9F-87AC-1132DB191353">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>12432B16-80AD-F82B-1408-8F41AA66997D</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KOR_OBI" id="3243724A-2D6E-D8CA-75DF-05F1D63AF4FD">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>49C95ADB-3E2B-9D04-7ADE-4F0596C64133</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STAN_OBI" id="F8092AAC-5F19-A06A-A59E-C67752AE5EB9">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>DAB1E012-CEB6-AC8F-D2EE-E29D468B8993</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_OBI" id="E4D27C02-9581-537E-010C-94F0CCB14C55">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>932A7C97-B001-1A6A-48FA-0427B3B10DAB</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Agent_IG_AGE" id="EAB29D49-CD63-7982-0CD5-86A2F496DE19">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>9EED024F-10C5-836C-21D8-A50DD5DB235C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C5D4273-EADA-EE98-B0EF-6B0B788BBFBB" referredColumn="640653A1-75CB-0A5F-3219-7C829A6971F9"/>
+</associations>
+</Column>
+<Column name="Stan_ID_ST" id="1AF08A98-B9F6-0CA2-BB36-7636B055EFA2">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>CEF8F3CB-C4B8-FB47-F6E0-ACB5D394C13B</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9DDC4DC-670A-BEE2-8E52-08BF1318F4DC" referredColumn="07E26289-16A5-AB5F-AAA9-A3BC50DDD097"/>
+</associations>
+</Column>
+<Column name="Zakupac_ID_KOR" id="7E7F94DB-C5F3-EF19-BE3C-A0240E47C985">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>CCB53A1F-BC41-4828-F871-EE6A33C2DC37</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFC71A69-0A2E-F9C1-796C-7B73B1FDD8B6" referredColumn="4D92022A-FE10-4564-E0D3-18C226F0ED5F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35C01E3A-85FF-AAF9-CCB7-BCF377E10D4F" name="Zahtev_za_obilazak_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E92E96DF-6D43-D44B-F276-CA924BAD52EB</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2B160F2-0D53-C252-091B-CA616CFA9D52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BC6E7C7-1DF9-85B1-B596-013A50661299" name="Zahtev_za_obilazak_Stan_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>A0B3B198-C49D-6B51-E719-4CC608F65402</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AF08A98-B9F6-0CA2-BB36-7636B055EFA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8DE5D84-535A-F566-29F3-7A93F08A9A6D" name="Zahtev_za_obilazak_Zakupac_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>0488C1AB-6D94-01BA-E901-E5F51D11F1F6</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E7F94DB-C5F3-EF19-BE3C-A0240E47C985"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10FEBDE2-5B28-ADA6-B0D7-AA31FAA97E76" name="Zahtev_za_obilazak_Agent_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>FE2E5425-122C-9A32-E969-C0FA9C446A5A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAB29D49-CD63-7982-0CD5-86A2F496DE19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

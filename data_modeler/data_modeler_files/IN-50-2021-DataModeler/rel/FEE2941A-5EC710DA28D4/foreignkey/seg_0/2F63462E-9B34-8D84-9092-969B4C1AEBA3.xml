@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F63462E-9B34-8D84-9092-969B4C1AEBA3" containerWithKeyObject="695C9F97-14F2-F759-DDF7-2A6717B4E9CD" localFKIndex="76A58717-993A-5E53-DC05-4F525FC25863" name="angažuje_Stanodavac_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E8B15E4A-EBD4-06D1-E11E-091740955A2C</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<referredTableLongName>Stanodavac</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>19E1F444-0F24-57F3-553C-BC19FCE2595C</referredTableID>
+<keyObject>E9D6E4C6-4D93-A9E4-7146-D08D5F1C6661</keyObject>
+<referredKeyID>E9D6E4C6-4D93-A9E4-7146-D08D5F1C6661</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_KOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

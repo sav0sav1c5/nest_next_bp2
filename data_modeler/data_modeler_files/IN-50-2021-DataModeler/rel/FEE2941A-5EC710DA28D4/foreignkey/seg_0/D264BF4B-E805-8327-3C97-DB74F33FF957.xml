@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D264BF4B-E805-8327-3C97-DB74F33FF957" containerWithKeyObject="76B79F1A-8179-BD02-66CF-BEB9CD3BF5DF" localFKIndex="6607E7E2-3950-E2E9-D312-77368198B0A4" name="Prostorija_Stan_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>4D6F1DDC-C503-8237-8BF7-C30CA2D9D523</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<referredTableLongName>Stan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCAC4411-4CA5-1362-CF4B-F289E51506FD</referredTableID>
+<keyObject>895F9B18-CB3D-BA50-A5E8-C1D2EA85D0FE</keyObject>
+<referredKeyID>895F9B18-CB3D-BA50-A5E8-C1D2EA85D0FE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

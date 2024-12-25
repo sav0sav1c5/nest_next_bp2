@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="posreduje u" directorySegmentName="seg_0" id="5BCA6786-428E-E85D-0061-C66A2A57078D">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:31:54 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<targetPk>972B0F49-191A-37A2-9640-B85B5E75E78D</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C69AE0A2-1182-EB9C-C625-C8EB8ECD66B4</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>33DB48D5-0977-48BA-4A7B-419056ED7CF7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

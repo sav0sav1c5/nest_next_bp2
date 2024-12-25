@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prima" directorySegmentName="seg_0" id="70C08034-6352-D5DE-3717-7055B2AE25EA">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:34:01 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<sourcePk>E84DA94B-E5EE-B904-E502-EB272F87FCA8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>714D48F9-6E3E-1CA1-ADD9-21B14B2A2469</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4E5EAAB3-EB4B-BCCA-6770-E3432F3C6C2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

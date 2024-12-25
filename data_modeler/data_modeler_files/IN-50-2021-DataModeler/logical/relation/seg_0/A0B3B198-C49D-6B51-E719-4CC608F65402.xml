@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dobija" directorySegmentName="seg_0" id="A0B3B198-C49D-6B51-E719-4CC608F65402">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:23:11 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<sourcePk>E92E96DF-6D43-D44B-F276-CA924BAD52EB</sourcePk>
+<targetPk>0C1BB622-A6C2-ACA8-06DB-F6FEA1706982</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>93832DF9-515A-98B5-A5A1-AA65F554417B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D1A299AF-81C2-8F14-48C6-A351D47E7828</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

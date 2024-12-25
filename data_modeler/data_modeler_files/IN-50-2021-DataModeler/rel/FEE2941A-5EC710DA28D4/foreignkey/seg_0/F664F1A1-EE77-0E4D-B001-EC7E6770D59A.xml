@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F664F1A1-EE77-0E4D-B001-EC7E6770D59A" containerWithKeyObject="728C3587-D6C4-36F9-674A-365A667B4EFE" localFKIndex="D28BE41C-EABC-07AA-EFF2-FD6DBCBC50E4" name="Recenzija_Sklapaju_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>049C0051-2210-50AB-1CBF-2BB6B4C33440</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<referredTableLongName>Sklapaju</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A0B8AA46-E0FB-2AD1-501C-83EA5839F958</referredTableID>
+<keyObject>7AFE77E2-8038-51A4-044B-FBBF0EA21A8C</keyObject>
+<referredKeyID>7AFE77E2-8038-51A4-044B-FBBF0EA21A8C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Sklapaju_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

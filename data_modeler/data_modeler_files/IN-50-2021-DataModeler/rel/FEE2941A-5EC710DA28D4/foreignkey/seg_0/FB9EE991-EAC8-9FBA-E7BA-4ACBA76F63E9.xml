@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB9EE991-EAC8-9FBA-E7BA-4ACBA76F63E9" containerWithKeyObject="A0B8AA46-E0FB-2AD1-501C-83EA5839F958" localFKIndex="ECEAD767-6336-94BC-F637-AE8095FD3E84" name="Sklapaju_Zakupac_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>DD9D68AA-EBC3-0199-D03A-923AF118A281</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<referredTableLongName>Zakupac</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F95AF52-2CB3-E5F7-9885-FB111C64460D</referredTableID>
+<keyObject>D85ABCDF-CCAF-EB50-A543-152CD306B3DE</keyObject>
+<referredKeyID>D85ABCDF-CCAF-EB50-A543-152CD306B3DE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_KOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

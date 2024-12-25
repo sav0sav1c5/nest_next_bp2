@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sklapajuZ" directorySegmentName="seg_0" id="DD9D68AA-EBC3-0199-D03A-923AF118A281">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:37:34 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<sourcePk>E84DA94B-E5EE-B904-E502-EB272F87FCA8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1525F258-62E8-677A-BE94-FB76A83118D6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C69AE0A2-1182-EB9C-C625-C8EB8ECD66B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

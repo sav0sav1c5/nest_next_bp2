@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="93832DF9-515A-98B5-A5A1-AA65F554417B" name="Zahtev za obilazak">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:22:50 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_OBI" id="FA282AB0-95E3-3822-C089-ABBC5ADEF5B3">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:15 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATVR_OBI" id="12432B16-80AD-F82B-1408-8F41AA66997D">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:15 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KOR_OBI" id="49C95ADB-3E2B-9D04-7ADE-4F0596C64133">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:15 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STAN_OBI" id="DAB1E012-CEB6-AC8F-D2EE-E29D468B8993">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:15 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS_OBI" id="932A7C97-B001-1A6A-48FA-0427B3B10DAB">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:15 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IG_AGE" id="9EED024F-10C5-836C-21D8-A50DD5DB235C">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:21:46 UTC</createdTime>
+<generatorID>FE2E5425-122C-9A32-E969-C0FA9C446A5A</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>783255C5-E43C-030C-EFCB-A0F6CB21CE24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ST" id="CEF8F3CB-C4B8-FB47-F6E0-ACB5D394C13B">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:23:27 UTC</createdTime>
+<generatorID>A0B3B198-C49D-6B51-E719-4CC608F65402</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>65E314DD-FD11-0854-319E-11ACA987B333</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_KOR" id="CCB53A1F-BC41-4828-F871-EE6A33C2DC37">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:34:34 UTC</createdTime>
+<generatorID>0488C1AB-6D94-01BA-E901-E5F51D11F1F6</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E92E96DF-6D43-D44B-F276-CA924BAD52EB" name="Zahtev za obilazak PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-08 23:23:58 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA282AB0-95E3-3822-C089-ABBC5ADEF5B3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

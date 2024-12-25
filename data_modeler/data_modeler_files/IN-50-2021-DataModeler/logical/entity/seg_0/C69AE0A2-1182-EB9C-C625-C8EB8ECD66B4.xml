@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C69AE0A2-1182-EB9C-C625-C8EB8ECD66B4" name="Sklapaju">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:28:58 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STANOD_ID" id="F4F1C725-93B0-787F-C95E-90F938199D08">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:29:09 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZAK_ID" id="71D94A18-AAD8-57C1-6E0F-C98767AB249C">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:29:35 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IG_AGE" id="F040BF39-2E45-158A-7B35-6A778E0E652A">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:32:17 UTC</createdTime>
+<generatorID>5BCA6786-428E-E85D-0061-C66A2A57078D</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>783255C5-E43C-030C-EFCB-A0F6CB21CE24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ST" id="02FDB2EF-0B8D-7BBA-D6CC-5CAFB6D19056">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-11 17:35:14 UTC</createdTime>
+<generatorID>435A3659-DA1D-D056-2766-2BAD2D414404</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>65E314DD-FD11-0854-319E-11ACA987B333</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_KOR" id="7D2DC013-07E4-0F60-E7F0-FD542FEDCAA2">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:37:34 UTC</createdTime>
+<generatorID>DD9D68AA-EBC3-0199-D03A-923AF118A281</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_KOR1" id="E59E8B24-F1D6-A8A3-6F31-96AEF08E5142">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:38:33 UTC</createdTime>
+<generatorID>8E3FC3D3-BC6C-6A0D-94D2-F8245E9C8B1F</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<engineerTo>
+<item key="FEE2941A-4A45-ED77-832A-5EC710DA28D4" value="true"/>
+</engineerTo>
+<referedAttribute>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

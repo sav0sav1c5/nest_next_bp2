@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19E1F444-0F24-57F3-553C-BC19FCE2595C" name="Stanodavac">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>43812C25-2313-1CF7-DD46-CA95CEFE9C72</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_KOR" id="1500BA70-78AF-5CEF-7A29-588A6B620A5C">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>2D32DE56-C5A9-F1BE-E3C5-465CA15AC815</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AC771FB-0EC2-B0B2-95CD-A41F9759CD38" referredColumn="EC22A6EF-23F6-3EA5-BE44-5E986026662D"/>
+</associations>
+</Column>
+<Column name="OCENA_STANOD" id="94D84F6C-D809-C886-D004-7506EEEBDC56">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>66D40164-AEF4-A921-2FE0-27171055A4FB</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9D6E4C6-4D93-A9E4-7146-D08D5F1C6661" name="Stanodavac_PK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>E84DA94B-E5EE-B904-E502-EB272F87FCA8</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1500BA70-78AF-5CEF-7A29-588A6B620A5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AE6E99A-2CB1-53B9-9876-0A1E202E16FD" name="Stanodavac_Korisnik_FK">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-20 19:40:17 UTC</createdTime>
+<generatorID>B0B6965D-DA6D-6274-9B95-85AFE2F03027</generatorID>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1500BA70-78AF-5CEF-7A29-588A6B620A5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHK_OCENA_RANGE" directorySegmentName="seg_0" id="E0A45976-B9B8-EADF-BE68-F64F537FDBC9">
+<createdBy>ws232</createdBy>
+<createdTime>2024-12-22 03:08:23 UTC</createdTime>
+<ownerDesignName>IN-50-2021-DataModeler</ownerDesignName>
+<rule><![CDATA[OCENA_STANOD BETWEEN 1.0 AND 5.0
+]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
