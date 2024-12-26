@@ -13,15 +13,18 @@ public class JednostavanUpit2UIHandler {
 
     public void handleUpit() {
         System.out.println("\n[JEDNOSTAVAN UPIT 2]");
-        System.out.println("--------------------------------------------------------------------------------------");
-        System.out.println("|Opis: Prikazuje ukupan broj oglašenih stanova u svakom gradu.                       |");
-        System.out.println("--------------------------------------------------------------------------------------");
-        System.out.println("|Upit: SELECT g.ime_grada, COUNT(s.stan_id) AS broj_stanova                          |");
-        System.out.println("|      FROM grad g                                                                   |");
-        System.out.println("|      JOIN adresa a ON g.grad_id = a.grad_id                                        |");
-        System.out.println("|      JOIN stan s ON a.adresa_id = s.adresa_id                                      |");
-        System.out.println("|      GROUP BY g.ime_grada;                                                         |");
-        System.out.println("--------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("| Opis: Ovaj upit daje broj stanova po gradovima. Spaja tabele `grad`, `adresa`, i    |");
+        System.out.println("|       `stan` kako bi izračunao broj stanova u svakom gradu. Upit koristi `COUNT()`  |");
+        System.out.println("|       kako bi prebrojao broj stanova u svakom gradu (`broj_stanova`) i grupiše      |");
+        System.out.println("|       rezultate prema imenu grada.                                                  |");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("| Upit: SELECT g.ime_grada, COUNT(s.stan_id) AS broj_stanova                          |");
+        System.out.println("|       FROM grad g                                                                   |");
+        System.out.println("|       JOIN adresa a ON g.grad_id = a.grad_id                                        |");
+        System.out.println("|       JOIN stan s ON a.adresa_id = s.adresa_id                                      |");
+        System.out.println("|       GROUP BY g.ime_grada;                                                         |");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Odaberite:");
         System.out.println("  [1]  POTVRDI pokretanje upita");
         System.out.println("  [0]  Nazad");

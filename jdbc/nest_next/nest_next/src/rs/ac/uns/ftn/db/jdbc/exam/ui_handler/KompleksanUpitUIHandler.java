@@ -18,7 +18,12 @@ public class KompleksanUpitUIHandler {
     public void handleUpit() {
         System.out.println("\n[KOMPLEKSAN UPIT]");
         System.out.println("--------------------------------------------------------------------------------------");
-        System.out.println("|Opis: Prikazuje gradove sa najčešćim kategorijama stanova.                          |");
+        System.out.println("| Opis: Ovaj složeniji upit daje broj stanova po gradovima i kategorijama. Spaja     |");
+        System.out.println("|       tabele `grad`, `adresa`, `stan`, i `kategorija` kako bi dobio broj stanova u |");
+        System.out.println("|       svakoj kombinaciji grada i kategorije. Pored toga, koristi funkciju          |");
+        System.out.println("|       `SUM(COUNT(...))` u okviru `OVER (PARTITION BY ...)` za rangiranje           |");
+        System.out.println("|       gradova prema ukupnom broju stanova, sortira rezultate po opadajućem         |");
+        System.out.println("|       broju stanova, a zatim grupiše prema imenu grada i imenu kategorije.         |");
         System.out.println("--------------------------------------------------------------------------------------");
         System.out.println("|Upit: SELECT g.naz_gr, k.naz_kat, COUNT(s.id_st) AS brojStanova                     |");
         System.out.println("|      FROM grad g                                                                   |");
@@ -26,7 +31,7 @@ public class KompleksanUpitUIHandler {
         System.out.println("|      JOIN stan s ON a.id_adr = s.adresa_id_adr                                     |");
         System.out.println("|      JOIN kategorija k ON s.kategorija_id_kat = k.id_kat                           |");
         System.out.println("|      GROUP BY g.naz_gr, k.naz_kat                                                  |");
-        System.out.println("|      ORDER BY brojStanova DESC                                                     |");
+        System.out.println("|      ORDER BY SUM(COUNT(s.id_st)) OVER (PARTITION BY g.naz_gr) DESC, brojStanova   |");
         System.out.println("--------------------------------------------------------------------------------------");
         System.out.println("Odaberite:");
         System.out.println("  [1]  POTVRDI pokretanje upita");
@@ -42,7 +47,31 @@ public class KompleksanUpitUIHandler {
             System.out.println("Nepoznata opcija!");
         }
     }
+
+    private void executeQuery() {
+    	
+    	System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
+    	System.out.println(NajcesceKategorijeStanovaDTO.getFormattedHeader());
+    	
+        try {
+        	int br = 1;
+        	String prethodniGrad = "";
+            for (NajcesceKategorijeStanovaDTO najcesceKategorijeStanovaDTO : kompleksanUputService.getNajcesceKategorijeStanova()) {
+            	
+            	if (!najcesceKategorijeStanovaDTO.getNazivGr().equals(prethodniGrad)) {
+            		System.out.printf("| %-5d %s%n", br++, najcesceKategorijeStanovaDTO.toString());
+            	} else {
+            		System.out.printf("|       %s%n", najcesceKategorijeStanovaDTO.toString());
+            	}
+            	
+            	prethodniGrad = najcesceKategorijeStanovaDTO.getNazivGr();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     
+/*    
     private void executeQuery() {
         System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
         System.out.println(NajcesceKategorijeStanovaDTO.getFormattedHeader());
@@ -81,21 +110,6 @@ public class KompleksanUpitUIHandler {
         }
     }
 
-
-/*
-    private void executeQuery() {
-    	
-    	System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
-    	System.out.println(NajcesceKategorijeStanovaDTO.getFormattedHeader());
-    	
-        try {
-        	int br = 1;
-            for (NajcesceKategorijeStanovaDTO najcesceKategorijeStanovaDTO : kompleksanUputService.getNajcesceKategorijeStanova()) {
-            	System.out.printf("| %-5d %s%n", br++, najcesceKategorijeStanovaDTO.toString());
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-*/    
+*/ 
+   
 }

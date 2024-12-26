@@ -42,24 +42,22 @@ public class NajcesceKategorijeStanovaDTO {
 	}
 
 	public static String getFormattedHeader() {
-		
 	    StringBuilder formattedHeader = new StringBuilder();
-	    formattedHeader.append(" ________________________________________________________________________________________________\n");
-	    formattedHeader.append(String.format("| %-5s | %-20s | %-45s                   | %n", "Br.", "Grad", "Kategorije i broj stanova"));
-	    formattedHeader.append(" ------------------------------------------------------------------------------------------------");
-	    
-		return formattedHeader.toString();
+	    formattedHeader.append(" ____________________________________________________________\n");
+	    formattedHeader.append(String.format("| %-5s | %-20s | %-12s | %-5s | %n", "Br.", "Grad", "Kategorija", "Broj Stanova"));
+	    formattedHeader.append(" ------------------------------------------------------------");
+
+	    return formattedHeader.toString();
 	}
+
 	
 	@Override
 	public String toString() {
+	    StringBuilder formatted = new StringBuilder();
+	    formatted.append(String.format("| %-20s | %-12s | %-5d        | %n", getNazivGr(), getNazivKat(), getBrojStanova()));
+	    formatted.append(" ------------------------------------------------------------");
 
-		StringBuilder formatted = new StringBuilder();
-	    formatted.append(String.format("| %-20s | %-25s | %-15d | %n", getNazivGr(), getNazivKat(), getBrojStanova()));
-	    formatted.append(" ------------------------------------------------------------------------------------------------");
-		
-		return formatted.toString();
+	    return formatted.toString();
 	}
-
 	
 }

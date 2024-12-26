@@ -14,14 +14,18 @@ public class JednostavanUpit1UIHandler {
     public void handleUpit() {
         
     	System.out.println("\n[JEDNOSTAVAN UPIT 1]");
-        System.out.println("--------------------------------------------------------------------------------------");
-        System.out.println("|Opis: Prikazuje prosečne cene stanova po kategorijama.                              |");
-        System.out.println("--------------------------------------------------------------------------------------");
-        System.out.println("|Upit: SELECT k.naz_kat, AVG(s.cena_st) AS prosecna_cena                             |");
-        System.out.println("|      FROM stan s                                                                   |");
-        System.out.println("|      JOIN kategorija k ON s.kategorija_id_kat = k.id_kat                           |");
-        System.out.println("|      GROUP BY k.naz_kat                                                            |");
-        System.out.println("--------------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("| Opis: Ovaj upit računa prosečnu cenu stanova po kategorijama. Spaja tabelu `stan`   |");
+        System.out.println("|       sa tabelom `kategorija` koristeći `kategorija_id_kat` i `id_kat` kao uslov za |");
+        System.out.println("|       spajanje. Za svaku kategoriju (prema imenu kategorije `naz_kat`), upit        |");
+        System.out.println("|       koristi agregatnu funkciju `AVG()` kako bi izračunao prosečnu cenu stanova    |");
+        System.out.println("|       (`prosecna_cena`) i grupiše rezultate po kategoriji.                          |");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("| Upit: SELECT k.naz_kat, AVG(s.cena_st) AS prosecna_cena                             |");
+        System.out.println("|       FROM stan s                                                                   |");
+        System.out.println("|       JOIN kategorija k ON s.kategorija_id_kat = k.id_kat                           |");
+        System.out.println("|       GROUP BY k.naz_kat                                                            |");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Odaberite:");
         System.out.println("  [1]  POTVRDI pokretanje upita");
         System.out.println("  [0]  Nazad");

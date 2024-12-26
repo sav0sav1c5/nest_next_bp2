@@ -15,7 +15,10 @@ public class OsnovniUpitUIHandler {
         
     	System.out.println("\n[OSNOVNI UPIT]");
         System.out.println("======================================================================================");
-        System.out.println("| Opis: Prikazuje sve gradove iz baze podataka (u kojima su izdavani stanovi).       |");
+        System.out.println("| Opis: Ovaj upit prikazuje osnovne informacije o gradovima. Upit selektuje kolone   |");
+        System.out.println("|       `id_gr` i `naz_gr` iz tabele `grad`, prikazujući ID i naziv svakog grada u   |");
+        System.out.println("|       bazi podataka. Upit ne sadrži nikakve spajanja sa drugim tabelama, već       |");
+        System.out.println("|       jednostavno vraća listu gradova.                                             |");
         System.out.println("======================================================================================");
         System.out.println("| Upit: SELECT id_gr, naz_gr                                                         |");
         System.out.println("|       FROM grad                                                                    |");

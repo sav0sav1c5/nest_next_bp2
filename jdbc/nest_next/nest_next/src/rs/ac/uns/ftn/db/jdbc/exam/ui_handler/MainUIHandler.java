@@ -50,7 +50,7 @@ public class MainUIHandler {
             System.out.println("          |   [2]  Jednostavan upit 1    |");
             System.out.println("          |   [3]  Jednostavan upit 2    |");
             System.out.println("          |   [4]  Kompleksan upit       |");
-            System.out.println("          |   [5]  Transakcija 1         |");
+            System.out.println("          |   [5]  Transakcija           |");
             System.out.println("          |   [X]  Izlazak iz programa   |");
             System.out.println("          |                              |");
             System.out.println("           ==============================");

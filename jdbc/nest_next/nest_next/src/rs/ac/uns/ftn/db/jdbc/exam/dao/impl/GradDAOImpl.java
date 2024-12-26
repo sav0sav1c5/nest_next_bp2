@@ -102,12 +102,12 @@ public class GradDAOImpl implements GradDAO {
 		List<NajcesceKategorijeStanovaDTO> result = new ArrayList<>();
         
 		String query = "SELECT g.naz_gr, k.naz_kat, COUNT(s.id_st) AS brojStanova " +
-                       "FROM grad g " +
-                       "JOIN adresa a ON g.id_gr = a.grad_id_gr " +
-                       "JOIN stan s ON a.id_adr = s.adresa_id_adr " +
-                       "JOIN kategorija k ON s.kategorija_id_kat = k.id_kat " +
-                       "GROUP BY g.naz_gr, k.naz_kat " +
-                       "ORDER BY brojStanova DESC";
+		        	   "FROM grad g " +
+		        	   "JOIN adresa a ON g.id_gr = a.grad_id_gr " +
+		        	   "JOIN stan s ON a.id_adr = s.adresa_id_adr " +
+		        	   "JOIN kategorija k ON s.kategorija_id_kat = k.id_kat " +
+		        	   "GROUP BY g.naz_gr, k.naz_kat " +
+		        	   "ORDER BY SUM(COUNT(s.id_st)) OVER (PARTITION BY g.naz_gr) DESC, brojStanova DESC";
 
         try (Connection connection = ConnectionUtil_HikariCP.getConnection();
         	 PreparedStatement preparedStatement = connection.prepareStatement(query);
