@@ -24,14 +24,20 @@ Ovaj repozitorijum sadrži implementaciju projekta BP2 prema dostavljenoj specif
      - Transakcija: unos, modifikacija ili brisanje podataka u najmanje dve tabele.
 
 ## Struktura Projekta
-
-- `model/` - Definicija EER modela i relacionog modela.
-- `scripts/` - Generisane DDL i DML skripte.
-- `src/` - Izvorni kod aplikacije organizovan po slojevima:
-  - `dao/` - Data Access Object sloj.
-  - `service/` - Servisni sloj.
-  - `uihandler/` - Interfejs korisnika.
-  - `dto/` - Data Transfer Object klase.
+- `data_modeler/` - Sadrži fajlove Data Modeler-a, kao i prikaz logičkog i relacionog modela
+- `ddl_file/` - Sadrži fajl DDL skripte koja je generisana pomoću Data Modeler-a
+- `dml_file/` - Sadrži fajl DML skripte koja je kreirana kako bi insert-ovala podatke u bazu
+- `er/` - Sadrži fajlove koji prikazuju kreiran EER dijagram na osnovu kreirane specifikacije projekta
+- `jdbc/` - Izvorni kod aplikacije organizovan po slojevima:
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/connection/`** - Utility klase za konekciju sa bazom podataka.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/dao/`** - Data Access Object (DAO) sloj.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/dao/impl`** - Implementacija Data Access Object (DAO) sloja.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/dto/`** - Data Transfer Object (DTO) klase.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/main/`** - Sadrži main klasu za pokretanje projekta.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/model/`** - Model klase koje predstavljaju tabele u bazi podataka.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/service/`** - Servisni sloj odgovoran za poslovnu logiku.
+  - **`src/rs/ac/uns/ftn/db/jdbc/exam/ui_handler/`** - Klase koje upravljaju korisničkim interfejsom.
+- `sprecification/` - Sadrži fajlove specifikaciju projekta 
 
 ## Pokretanje Projekta
 
