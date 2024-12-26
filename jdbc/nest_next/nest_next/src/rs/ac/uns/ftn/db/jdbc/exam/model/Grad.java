@@ -31,4 +31,22 @@ public class Grad {
 		this.nazivGr = nazivGr;
 	}
 
+	public static String getFormattedHeader() {
+        StringBuilder formattedHeader = new StringBuilder();
+        formattedHeader.append(" ______________________________");
+        formattedHeader.append(String.format("| %-5s | %-20s | %n", "Br.", "Grad"));
+        formattedHeader.append(" ------------------------------");
+        return formattedHeader.toString();
+	}
+	
+	@Override
+	public String toString() {
+		int br = 1;
+		StringBuilder formatted = new StringBuilder();
+		formatted.append(String.format("| %-5s | %-20s | %n", br++, getNazivGr()));
+		formatted.append(" ------------------------------");
+		return formatted.toString();
+	}
+
+	
 }

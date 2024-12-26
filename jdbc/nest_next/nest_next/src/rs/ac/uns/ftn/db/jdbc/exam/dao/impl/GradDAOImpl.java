@@ -9,7 +9,6 @@ import java.util.List;
 
 import rs.ac.uns.ftn.db.jdbc.exam.connection.ConnectionUtil_HikariCP;
 import rs.ac.uns.ftn.db.jdbc.exam.dao.GradDAO;
-import rs.ac.uns.ftn.db.jdbc.exam.dto.GradDTO;
 import rs.ac.uns.ftn.db.jdbc.exam.dto.GradoviIBrojStanovaDTO;
 import rs.ac.uns.ftn.db.jdbc.exam.dto.NajcesceKategorijeStanovaDTO;
 import rs.ac.uns.ftn.db.jdbc.exam.model.Grad;
@@ -49,16 +48,17 @@ public class GradDAOImpl implements GradDAO {
 	@Override
 	public Iterable<Grad> findAll() throws SQLException {
 		
-		String query = "select naz_gr from grad";
+		String query = "select id_gr, naz_gr from grad";
 		List<Grad> gradList = new ArrayList<Grad>();
-		Connection connection = ConnectionUtil_HikariCP.getConnection();
 		
-		try (PreparedStatement preparedStatement = connection.prepareStatement(query);
-				ResultSet resultSet = preparedStatement.executeQuery()) {
+		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
+			 PreparedStatement preparedStatement = connection.prepareStatement(query);
+			 ResultSet resultSet = preparedStatement.executeQuery()) {
 			
 			while (resultSet.next()) {
-				Grad grad = new Grad(resultSet.getString(1));
-				gradList.add(grad);
+				int idGr = resultSet.getInt(1);
+				String nazivGr = resultSet.getString(2);
+				gradList.add(new Grad(idGr, nazivGr));
 			}
 		
 		}
@@ -114,7 +114,7 @@ public class GradDAOImpl implements GradDAO {
         	 ResultSet resultSet = preparedStatement.executeQuery()) {
         	
             while (resultSet.next()) {
-                String nazivGr =resultSet.getString("naz_gr");
+                String nazivGr = resultSet.getString("naz_gr");
                 String nazivKat = resultSet.getString("naz_kat");
                 int brojStanova = resultSet.getInt("brojStanova");
                 result.add(new NajcesceKategorijeStanovaDTO(nazivGr, nazivKat, brojStanova));
@@ -152,30 +152,5 @@ public class GradDAOImpl implements GradDAO {
 		
 		return result;
 	}
-	
-/*
-	@Override
-	public Map<String, Integer> getGradoviIBrojStanova() throws SQLException {
-		String query = "SELECT g.naz_gr, COUNT(s.id_st) AS broj_stanova"
-				     + "FROM grad g"
-				     + "JOIN adresa a ON g.id_gr = a.grad_id_gr"
-				     + "JOIN stan s ON a.id_adr = s.adresa_id_adr"
-				     + "GROUP BY g.naz_gr";
 
-		Map<String, Integer> result = new HashMap<>();
-		
-		try (Connection connection = ConnectionUtil_HikariCP.getConnection();
-			 PreparedStatement preparedStatement = connection.prepareStatement(query);
-			 ResultSet resultSet = preparedStatement.executeQuery()) {
-			
-			while(resultSet.next()) {
-				String grad = resultSet.getString(1);
-				int brojStanova = resultSet.getInt(2);
-				result.put(grad, brojStanova);
-			}
-		}
-		
-		return result;
-	}
-	*/
 }

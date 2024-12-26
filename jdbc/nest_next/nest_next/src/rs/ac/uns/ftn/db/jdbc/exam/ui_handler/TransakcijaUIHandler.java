@@ -8,11 +8,11 @@ import rs.ac.uns.ftn.db.jdbc.exam.model.Adresa;
 import rs.ac.uns.ftn.db.jdbc.exam.model.Grad;
 import rs.ac.uns.ftn.db.jdbc.exam.model.Stan;
 import rs.ac.uns.ftn.db.jdbc.exam.service.GradService;
-import rs.ac.uns.ftn.db.jdbc.exam.service.OglasavanjeService;
+import rs.ac.uns.ftn.db.jdbc.exam.service.TransakcijaService;
 
-public class Transakcija1UIHandler {
+public class TransakcijaUIHandler {
 
-    private OglasavanjeService oglasavanjeService = new OglasavanjeService();
+	private TransakcijaService transakcijaService = new TransakcijaService();
     private GradService gradService = new GradService();
     public static Scanner sc = new Scanner(System.in);
 
@@ -47,17 +47,18 @@ public class Transakcija1UIHandler {
     private void executeQuery() {
         try {
             // Izlistavanje svih gradova sa imenima
+        	System.out.println("[Oglašavanje stana]");
+            System.out.println("---------------------------------------------");
             System.out.println("\nDostupni gradovi:");
-            for (Grad grad : gradService.getAll()) {
+            for (Grad grad : gradService.findAll()) {
                 System.out.println(grad.getNazivGr());
             }
 
-            System.out.print("\nUnesite ime grada: ");
+            System.out.print("\nUnesite ime grada u kome oglašavate stan: ");
             String nazivGrada = sc.nextLine();
 
-            // Provera da li grad postoji u bazi
             int gradId = -1;
-            for (Grad grad : gradService.getAll()) {
+            for (Grad grad : gradService.findAll()) {
                 if (grad.getNazivGr().equalsIgnoreCase(nazivGrada)) {
                     gradId = grad.getIdGr();
                     System.out.println("Odabrano: " + grad.getNazivGr());
@@ -70,11 +71,10 @@ public class Transakcija1UIHandler {
                 return;
             }
 
-            // Unos podataka za adresu
-            System.out.print("Unesite ulicu: ");
+            System.out.println("---------------------------------------------");
+            System.out.print("Unesite ulicu u kojoj se nalazi stan: ");
             String ulAdr = sc.nextLine();
-
-            System.out.print("Unesite broj: ");
+            System.out.print("Unesite broj ulice u kojoj se nalazi stan: ");
             int rbrAdr = Integer.parseInt(sc.nextLine());
             
             // Kreiranje objekta Adresa
@@ -83,25 +83,23 @@ public class Transakcija1UIHandler {
             novaAdresa.setRbrAdr(rbrAdr);
             novaAdresa.setGradIdGr(gradId);
 
-            // Unos podataka za stan
-            System.out.print("Unesite površinu stana: ");
+            System.out.println("---------------------------------------------");
+            System.out.print("Unesite površinu stana koji oglašavate: ");
             int povrSt = Integer.parseInt(sc.nextLine());
 
-            System.out.print("Unesite cenu stana: ");
+            System.out.print("Unesite cenu stana koji oglašavate: ");
             int cenaSt = Integer.parseInt(sc.nextLine());
 
-            System.out.print("Unesite ocenu stana (1-5): ");
-            float ocenaSt = Float.parseFloat(sc.nextLine());
+            // System.out.print("Unesite ocenu stana (1-5): ");
+            // float ocenaSt = Float.parseFloat(sc.nextLine());
 
-            System.out.print("Da li je stan dostupan (DA/NE): ");
-            String dostupSt = sc.nextLine();
+            // System.out.print("Da li je stan dostupan (DA/NE): ");
+            // String dostupSt = sc.nextLine();
 
             // Kreiranje objekta Stan
             Stan noviStan = new Stan();
             noviStan.setPovrSt(povrSt);
             noviStan.setCenaSt(cenaSt);
-            noviStan.setOcenaSt(ocenaSt);
-            noviStan.setDostupSt(dostupSt);
             // U principu trebalo bi se i za njih uraditi isto ono što je i za
             // adresu i stan, unos podataka, a posle insertovanje (specifikacija kaze min 2 insert, update ili delete).
             // Sem ako ne dodje do nekih promena zahteva projekta naredne 4 linije mogu 
@@ -115,7 +113,7 @@ public class Transakcija1UIHandler {
             OglasavanjeDTO oglasavanjeDTO = new OglasavanjeDTO(novaAdresa, noviStan);
 
             // Poziv servisa za transakciju
-            boolean uspeh = oglasavanjeService.insertOglasavanje(oglasavanjeDTO);
+            boolean uspeh = transakcijaService.insertOglasavanjeStana(oglasavanjeDTO);
 
             if (uspeh) {
                 System.out.println("Uspešno izvršena transakcija unosa adrese i stana.");
@@ -127,4 +125,5 @@ public class Transakcija1UIHandler {
             System.out.println("Greška prilikom izvršavanja unosa: " + e.getMessage());
         }
     }
+    
 }

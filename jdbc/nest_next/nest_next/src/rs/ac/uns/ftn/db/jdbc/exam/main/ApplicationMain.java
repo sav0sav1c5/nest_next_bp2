@@ -10,12 +10,11 @@ public class ApplicationMain {
     	MainUIHandler mainUIHandler = new MainUIHandler();
 		
     	try {
-			
 			mainUIHandler.handleMainMenu();
+			
 			ConnectionUtil_HikariCP.closeDataSource();
 			
 		} catch (Exception e) {
-			
 			ConnectionUtil_HikariCP.closeDataSource();
 		
 		}

@@ -27,9 +27,4 @@ public class Kategorija {
 		this.nazivKat = nazivKat;
 	}
 	
-	@Override
-	public String toString() {
-		return "Kategorija [idKat=" + idKat + ", nazivKat=" + nazivKat + "]";
-	}
-	
 }

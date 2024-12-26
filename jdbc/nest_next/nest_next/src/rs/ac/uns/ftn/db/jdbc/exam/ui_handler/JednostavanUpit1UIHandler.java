@@ -1,9 +1,9 @@
 package rs.ac.uns.ftn.db.jdbc.exam.ui_handler;
 
 import java.sql.SQLException;
-import java.util.Map;
 import java.util.Scanner;
 
+import rs.ac.uns.ftn.db.jdbc.exam.dto.KategorijaDTO;
 import rs.ac.uns.ftn.db.jdbc.exam.service.StanService;
 
 public class JednostavanUpit1UIHandler {
@@ -12,7 +12,8 @@ public class JednostavanUpit1UIHandler {
     public static Scanner sc = new Scanner(System.in);
 
     public void handleUpit() {
-        System.out.println("\n[JEDNOSTAVAN UPIT 1]");
+        
+    	System.out.println("\n[JEDNOSTAVAN UPIT 1]");
         System.out.println("--------------------------------------------------------------------------------------");
         System.out.println("|Opis: Prikazuje prosečne cene stanova po kategorijama.                              |");
         System.out.println("--------------------------------------------------------------------------------------");
@@ -37,18 +38,14 @@ public class JednostavanUpit1UIHandler {
     }
 
     private void executeQuery() {
-        System.out.println("\nProsečne cene stanova po kategorijama:");
         
+    	System.out.println("\nProsečne cene stanova po kategorijama:");
+    	System.out.println(KategorijaDTO.getFormattedHeader());
+    	
         try {
-            Map<String, Double> avgPrices = stanService.getAveragePriceByCategory();
-        	System.out.println(" _________________________________________");
-            System.out.printf("| %-5s | %-15s | %-10s | %n", "Br.", "Kategorija", "Prosečna Cena");
-            System.out.println(" -----------------------------------------");
-            
-            int i = 1;
-            for (Map.Entry<String, Double> entry : avgPrices.entrySet()) {
-                System.out.printf("| %-5d | %-15s | %-10.2f    | %n", i++, entry.getKey(), entry.getValue());
-                System.out.println(" -----------------------------------------");
+        	int br = 1;
+            for (KategorijaDTO kategorijaDTO : stanService.getAveragePriceByCategory()) {
+        		System.out.printf("| %-5d %s%n", br++, kategorijaDTO.toString());
             }
         } catch (SQLException e) {
             System.out.println("Greška prilikom izvršavanja upita: " + e.getMessage());

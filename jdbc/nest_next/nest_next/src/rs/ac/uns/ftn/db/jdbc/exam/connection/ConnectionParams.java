@@ -6,6 +6,6 @@ public class ConnectionParams {
 	public static final String LOCAL_CONNECTION_STRING = "jdbc:oracle:thin:@localhost:1521/xepdb1";
 	public static final String CLASSROOM_CONNECTION_STRING = "jdbc:oracle:thin:@192.168.0.102:1522:db2016";
 
-	public static final String USERNAME = "BAZA_PROJ";
+	public static final String USERNAME = "nestnext";
 	public static final String PASSWORD = "mzws";
 }

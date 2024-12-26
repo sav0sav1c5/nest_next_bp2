@@ -10,12 +10,12 @@ import rs.ac.uns.ftn.db.jdbc.exam.dto.OglasavanjeDTO;
 import rs.ac.uns.ftn.db.jdbc.exam.model.Adresa;
 import rs.ac.uns.ftn.db.jdbc.exam.model.Stan;
 
-public class OglasavanjeService {
+public class TransakcijaService {
 
     private AdresaDAOImpl adresaDAO = new AdresaDAOImpl();
     private StanDAOImpl stanDAO = new StanDAOImpl();
 
-    public boolean insertOglasavanje(OglasavanjeDTO oglasavanjeDTO) {
+    public boolean insertOglasavanjeStana(OglasavanjeDTO oglasavanjeDTO) {
         try (Connection connection = ConnectionUtil_HikariCP.getConnection()) {
             connection.setAutoCommit(false);
 
@@ -39,5 +39,5 @@ public class OglasavanjeService {
             return false;
         }
     }
-
+    
 }

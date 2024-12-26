@@ -1,15 +1,18 @@
 package rs.ac.uns.ftn.db.jdbc.exam.ui_handler;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import rs.ac.uns.ftn.db.jdbc.exam.dto.NajcesceKategorijeStanovaDTO;
-import rs.ac.uns.ftn.db.jdbc.exam.service.GradService;
+import rs.ac.uns.ftn.db.jdbc.exam.service.KompleksanUpitService;
 
 public class KompleksanUpitUIHandler {
 
-	private static final GradService gradService = new GradService();
+	private static final KompleksanUpitService kompleksanUputService = new KompleksanUpitService();
 	public static Scanner sc = new Scanner(System.in);
 
     public void handleUpit() {
@@ -39,24 +42,60 @@ public class KompleksanUpitUIHandler {
             System.out.println("Nepoznata opcija!");
         }
     }
-
+    
     private void executeQuery() {
+        System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
+        System.out.println(NajcesceKategorijeStanovaDTO.getFormattedHeader());
+
         try {
-            List<NajcesceKategorijeStanovaDTO> gradovi = gradService.getNajcesceKategorijeStanova();
-            System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
-            System.out.println(" ____________________________________________________________________________");
-            System.out.printf("| %-5s | %-20s | %-25s | %-15s | %n", "Br.", "Grad", "Najčešća Kategorija", "Broj Stanova");
-            System.out.println(" ----------------------------------------------------------------------------");
-            
-            int i = 1;
-            
-            for (NajcesceKategorijeStanovaDTO grad : gradovi) {
-            	System.out.printf("| %-5d | %-20s | %-25s | %-15d | %n", i++, grad.getNazivGr(), grad.getNazivKat(), grad.getBrojStanova());
-            	System.out.println(" ----------------------------------------------------------------------------");
+            int br = 1;
+            // Mapiranje gradova sa svim kategorijama
+            Map<String, List<NajcesceKategorijeStanovaDTO>> gradKategorijeMap = new HashMap<>();
+
+            // Grupisanje podataka po gradovima
+            for (NajcesceKategorijeStanovaDTO kategorija : kompleksanUputService.getNajcesceKategorijeStanova()) {
+                gradKategorijeMap.computeIfAbsent(kategorija.getNazivGr(), k -> new ArrayList<>()).add(kategorija);
+            }
+
+            // Ispisivanje podataka po gradovima
+            for (Map.Entry<String, List<NajcesceKategorijeStanovaDTO>> entry : gradKategorijeMap.entrySet()) {
+                String grad = entry.getKey();
+                List<NajcesceKategorijeStanovaDTO> kategorije = entry.getValue();
+                StringBuilder formatted = new StringBuilder();
+
+                // Dodajemo sve kategorije za taj grad u string
+                for (NajcesceKategorijeStanovaDTO kategorija : kategorije) {
+                	formatted.append(kategorija.getNazivKat()).append(" (").append(kategorija.getBrojStanova()).append("), ");
+                }
+
+                // Uklanjamo poslednji zarez i razmak
+                formatted.setLength(formatted.length() - 2);
+
+                // Ispisivanje u željenom formatu sa poravnanjem
+                System.out.printf("| %-5d | %-20s | %-60s    |%n", br++, grad, formatted.toString());
+                System.out.println(" ------------------------------------------------------------------------------------------------");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+/*
+    private void executeQuery() {
+    	
+    	System.out.println("\nGradovi sa najčešćim kategorijama stanova:");
+    	System.out.println(NajcesceKategorijeStanovaDTO.getFormattedHeader());
+    	
+        try {
+        	int br = 1;
+            for (NajcesceKategorijeStanovaDTO najcesceKategorijeStanovaDTO : kompleksanUputService.getNajcesceKategorijeStanova()) {
+            	System.out.printf("| %-5d %s%n", br++, najcesceKategorijeStanovaDTO.toString());
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    
+*/    
 }

@@ -2,20 +2,22 @@ package rs.ac.uns.ftn.db.jdbc.exam.dto;
 
 public class StanDTO {
 
-	private int idSt;
     private int povrSt;
     private int cenaSt;
-    private int ocenaSt;
+    private double ocenaSt;
     private String dostupSt;
     private int adresaIdAdr;
     private int kategorijaIdKat;
     private int opremljenostIdOpr;
     private int stanodavacIdKor;
-	
-    public StanDTO(int idSt, int povrSt, int cenaSt, int ocenaSt, String dostupSt, int adresaIdAdr, int kategorijaIdKat,
+
+    public StanDTO() {
+		super();
+	}
+
+	public StanDTO(int povrSt, int cenaSt, double ocenaSt, String dostupSt, int adresaIdAdr, int kategorijaIdKat,
 			int opremljenostIdOpr, int stanodavacIdKor) {
 		super();
-		this.idSt = idSt;
 		this.povrSt = povrSt;
 		this.cenaSt = cenaSt;
 		this.ocenaSt = ocenaSt;
@@ -25,13 +27,18 @@ public class StanDTO {
 		this.opremljenostIdOpr = opremljenostIdOpr;
 		this.stanodavacIdKor = stanodavacIdKor;
 	}
-
-	public int getIdSt() {
-		return idSt;
-	}
-
-	public void setIdSt(int idSt) {
-		this.idSt = idSt;
+    
+    public StanDTO(int povrSt, int cenaSt, int adresaIdAdr, int kategorijaIdKat,
+			int opremljenostIdOpr, int stanodavacIdKor) {
+		super();
+		this.povrSt = povrSt;
+		this.cenaSt = cenaSt;
+		this.ocenaSt = 0.0;
+		this.dostupSt = "DA";
+		this.adresaIdAdr = adresaIdAdr;
+		this.kategorijaIdKat = kategorijaIdKat;
+		this.opremljenostIdOpr = opremljenostIdOpr;
+		this.stanodavacIdKor = stanodavacIdKor;
 	}
 
 	public int getPovrSt() {
@@ -50,11 +57,11 @@ public class StanDTO {
 		this.cenaSt = cenaSt;
 	}
 
-	public int getOcenaSt() {
+	public double getOcenaSt() {
 		return ocenaSt;
 	}
 
-	public void setOcenaSt(int ocenaSt) {
+	public void setOcenaSt(double ocenaSt) {
 		this.ocenaSt = ocenaSt;
 	}
 

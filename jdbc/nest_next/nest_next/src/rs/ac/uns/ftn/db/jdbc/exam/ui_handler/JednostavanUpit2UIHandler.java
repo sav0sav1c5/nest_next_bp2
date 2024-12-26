@@ -1,7 +1,6 @@
 package rs.ac.uns.ftn.db.jdbc.exam.ui_handler;
 
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Scanner;
 
 import rs.ac.uns.ftn.db.jdbc.exam.dto.GradoviIBrojStanovaDTO;
@@ -39,20 +38,14 @@ public class JednostavanUpit2UIHandler {
     }
 
     private void executeQuery() {
-        System.out.println("\nUkupan broj oglašenih stanova po gradovima:");
+        
+    	System.out.println("\nUkupan broj oglašenih stanova po gradovima:");
+        System.out.println(GradoviIBrojStanovaDTO.getFormattedHeader());
         
         try {
-            List<GradoviIBrojStanovaDTO> stanoviPoGradovima = gradService.getGradoviIBrojStanova();
-            System.out.println(" _____________________________________________");
-            System.out.printf("| %-5s | %-20s | %-10s | %n", "Br.", "Grad", "Broj Stanova");
-            System.out.println(" ---------------------------------------------");
-
-            int i = 1;
-            // Iteriramo kroz listu GradoviIBrojStanovaDTO objekata
-            for (GradoviIBrojStanovaDTO entry : stanoviPoGradovima) {
-                // Pozivamo getter metode na DTO objektu
-                System.out.printf("| %-5d | %-20s | %-10d   | %n", i++, entry.getNazivGr(), entry.getBrojSt());
-                System.out.println(" ---------------------------------------------");
+        	int br = 1;
+            for (GradoviIBrojStanovaDTO gradoviIBrojStanovaDTO : gradService.getGradoviIBrojStanova()) {
+            	System.out.printf("| %-5d %s%n", br++, gradoviIBrojStanovaDTO.toString());
             }
         } catch (SQLException e) {
             System.out.println("Greška prilikom izvršavanja upita: " + e.getMessage());

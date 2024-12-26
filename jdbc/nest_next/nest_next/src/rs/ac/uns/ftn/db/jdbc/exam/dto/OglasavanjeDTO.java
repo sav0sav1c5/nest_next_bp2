@@ -30,5 +30,4 @@ public class OglasavanjeDTO {
 		this.stan = stan;
 	}
 	
-	
 }

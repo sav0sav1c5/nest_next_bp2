@@ -67,63 +67,56 @@ public class AdresaDAOImpl implements AdresaDAO {
 	}
 
 	@Override
-	public int saveAll(Iterable<Adresa> entities) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+	public int saveAll(Iterable<Adresa> adrese) throws SQLException {
+
+		int rowsSaved = 0;
+		
+		try (Connection connection = ConnectionUtil_HikariCP.getConnection()) {
+			connection.setAutoCommit(false);
+			
+			try {
+				for(Adresa adresa : adrese) {
+					boolean success = saveTransactional(connection, adresa);
+					if (success) rowsSaved++;
+				}
+				
+				connection.commit();
+			} catch (SQLException e) {
+					connection.rollback();
+					throw e;
+				}
+		}
+		
+		return rowsSaved;
 	}
 
 	@Override
-	public boolean saveTransactional(Connection connection, Adresa entity) throws SQLException {
+	public boolean saveTransactional(Connection connection, Adresa adresa) throws SQLException {
 
-		int nextId = findMaxId(connection);
-		entity.setIdAdr(nextId);
-		
-		System.out.println("Next ID: " + entity.getIdAdr());
+		int nextId = findMaxId(connection) + 1;
+		adresa.setIdAdr(nextId);
 		
 		String query = "insert into adresa (id_adr, ul_adr, rbr_adr, grad_id_gr) values (?, ?, ?, ?)";
 		
-		// Prepare statement for execution
 	    try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-	        // Set the parameters for the prepared statement
-	        preparedStatement.setInt(1, entity.getIdAdr());  // id_adr
-	        preparedStatement.setString(2, entity.getUlAdr());  // ul_adr
-	        preparedStatement.setInt(3, entity.getRbrAdr());  // rbr_adr
-	        preparedStatement.setInt(4, entity.getGradIdGr());  // grad_id_gr
-
-	        // Execute the update and check the result
-	        int rowsAffected = preparedStatement.executeUpdate();
-
-	        System.out.println("\n\nRowsAffected: " + rowsAffected);
 	        
-	        // Commit the transaction if the update was successful
-	        if (rowsAffected > 0) {
-	            connection.commit();
-	            return true;
-	        } else {
-	            connection.rollback();
-	            return false;
-	        }
+	    	int i = 1;
+	    	preparedStatement.setInt(i++, adresa.getIdAdr());
+	        preparedStatement.setString(i++, adresa.getUlAdr()); 
+	        preparedStatement.setInt(i++, adresa.getRbrAdr());
+	        preparedStatement.setInt(i++, adresa.getGradIdGr());
 
-	    } catch (SQLException e) {
-	        // Roll back the transaction in case of an exception
-	        if (connection != null) {
-	            try {
-	                connection.rollback();
-	            } catch (SQLException rollbackEx) {
-	                rollbackEx.printStackTrace();
-	            }
-	        }
-	        throw e; // Re-throw the exception to be handled by the caller
+	        int rowsAffected = preparedStatement.executeUpdate();
+	        return rowsAffected == 1;
 	    }
-
 	}
-
+	
 	private int findMaxId(Connection connection) throws SQLException {
 
 		String query = "select max(id_adr) from adresa";
 		
-		try(PreparedStatement preparedStatement = connection.prepareStatement(query);
-				ResultSet resultSet = preparedStatement.executeQuery()) {
+		try (PreparedStatement preparedStatement = connection.prepareStatement(query);
+			 ResultSet resultSet = preparedStatement.executeQuery()) {
 			
 			if(resultSet.next()) {
 				return resultSet.getInt(1);
@@ -135,4 +128,22 @@ public class AdresaDAOImpl implements AdresaDAO {
 
 	}
 
+/*
+    private void commitTransaction(Connection connection) throws SQLException {
+        if (connection != null) {
+            connection.commit();
+        }
+    }
+
+    private void rollbackTransaction(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.rollback();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }	
+*/	
+	
 }

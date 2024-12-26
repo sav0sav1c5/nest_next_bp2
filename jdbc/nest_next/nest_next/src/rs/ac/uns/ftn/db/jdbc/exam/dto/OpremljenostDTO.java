@@ -2,23 +2,17 @@ package rs.ac.uns.ftn.db.jdbc.exam.dto;
 
 public class OpremljenostDTO {
 
-	private int idOpr;
 	private String nivoOpr;
 	private String opisOpr;
 	
-	public OpremljenostDTO(int idOpr, String nivoOpr, String opisOpr) {
+	public OpremljenostDTO() {
 		super();
-		this.idOpr = idOpr;
+	}
+
+	public OpremljenostDTO(String nivoOpr, String opisOpr) {
+		super();
 		this.nivoOpr = nivoOpr;
 		this.opisOpr = opisOpr;
-	}
-
-	public int getIdOpr() {
-		return idOpr;
-	}
-
-	public void setIdOpr(int idOpr) {
-		this.idOpr = idOpr;
 	}
 
 	public String getNivoOpr() {
