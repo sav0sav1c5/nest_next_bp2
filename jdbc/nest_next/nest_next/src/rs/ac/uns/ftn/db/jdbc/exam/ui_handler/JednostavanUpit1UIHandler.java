@@ -48,7 +48,7 @@ public class JednostavanUpit1UIHandler {
     	
         try {
         	int br = 1;
-            for (KategorijaDTO kategorijaDTO : stanService.getAveragePriceByCategory()) {
+            for (KategorijaDTO kategorijaDTO : stanService.getProsecnaCenaPoKategorijama()) {
         		System.out.printf("| %-5d %s%n", br++, kategorijaDTO.toString());
             }
         } catch (SQLException e) {

@@ -97,7 +97,7 @@ public class GradDAOImpl implements GradDAO {
 	}
 
 	@Override
-	public List<NajcesceKategorijeStanovaDTO> findGradSaNajcescimKategorijamaStanova() {
+	public List<NajcesceKategorijeStanovaDTO> findNajcesceKategorijeStanovaPoGradovima() {
 		
 		List<NajcesceKategorijeStanovaDTO> result = new ArrayList<>();
         
@@ -127,7 +127,7 @@ public class GradDAOImpl implements GradDAO {
 	}
 
 	@Override
-	public List<GradoviIBrojStanovaDTO> getGradoviIBrojStanova() {
+	public List<GradoviIBrojStanovaDTO> findGradoviIBrojStanova() {
 
 		List<GradoviIBrojStanovaDTO> result = new ArrayList<>();
 		

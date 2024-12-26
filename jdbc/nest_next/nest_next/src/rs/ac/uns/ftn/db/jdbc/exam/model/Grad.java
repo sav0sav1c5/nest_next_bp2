@@ -5,6 +5,10 @@ public class Grad {
 	private int idGr;
 	private String nazivGr;
 	
+	public Grad() {
+		super();
+	}
+
 	public Grad(int idGr, String nazivGr) {
 		super();
 		this.idGr = idGr;

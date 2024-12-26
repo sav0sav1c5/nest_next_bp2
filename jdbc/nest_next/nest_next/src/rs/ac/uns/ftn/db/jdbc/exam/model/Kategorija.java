@@ -5,6 +5,10 @@ public class Kategorija {
 	private int idKat;
 	private String nazivKat;
 	
+	public Kategorija() {
+		super();
+	}
+
 	public Kategorija(int idKat, String nazivKat) {
 		super();
 		this.idKat = idKat;

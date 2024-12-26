@@ -7,7 +7,11 @@ public class Prostorija {
     private double povrPros;
     private int stanIdSt;
 	
-    public Prostorija(int idPros, String nazPros, double povrPros, int stanIdSt) {
+    public Prostorija() {
+		super();
+	}
+
+	public Prostorija(int idPros, String nazPros, double povrPros, int stanIdSt) {
 		super();
 		this.idPros = idPros;
 		this.nazPros = nazPros;

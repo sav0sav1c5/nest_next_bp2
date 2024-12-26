@@ -11,8 +11,8 @@ public class StanService {
 
 	private static final StanDAO stanDAO = new StanDAOImpl();
 	
-    public List<KategorijaDTO> getAveragePriceByCategory() throws SQLException {
-    	return stanDAO.getAveragePriceByCategory();
+    public List<KategorijaDTO> getProsecnaCenaPoKategorijama() throws SQLException {
+    	return stanDAO.findProsecnaCenaPoKategorijama();
     }
     
 }
