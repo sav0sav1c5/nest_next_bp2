@@ -7,6 +7,6 @@ import rs.ac.uns.ftn.db.jdbc.exam.model.Stan;
 
 public interface StanDAO extends CRUDDao<Stan, Integer> {
 	
-	List<KategorijaDTO> getAveragePriceByCategory();
+	List<KategorijaDTO> findProsecnaCenaPoKategorijama();
 
 }

@@ -8,6 +8,10 @@ public class Korisnik {
 	private String emailKor;
 	private String tipKor;
 	
+	public Korisnik() {
+		super();
+	}
+	
 	public Korisnik(int idKor, String imeKor, String prezimeKor, String emailKor, String tipKor) {
 		super();
 		this.idKor = idKor;

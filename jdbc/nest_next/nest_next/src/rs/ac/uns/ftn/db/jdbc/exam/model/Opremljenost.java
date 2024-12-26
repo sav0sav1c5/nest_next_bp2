@@ -6,6 +6,10 @@ public class Opremljenost {
 	private String nivoOpr;
 	private String opisOpr;
 	
+	public Opremljenost() {
+		super();
+	}
+
 	public Opremljenost(int idOpr, String nivoOpr, String opisOpr) {
 		super();
 		this.idOpr = idOpr;

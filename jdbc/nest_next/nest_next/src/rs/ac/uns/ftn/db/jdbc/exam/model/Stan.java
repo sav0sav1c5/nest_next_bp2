@@ -12,7 +12,9 @@ public class Stan {
     private int opremljenostIdOpr;
     private int stanodavacIdKor;
 	
-    public Stan() { }
+    public Stan() { 
+    	super();
+    }
     
     public Stan(int idSt, int povrSt, int cenaSt, double ocena, String dostupSt, int adresaIdAdr, int kategorijaIdKat,
 			int opremljenostIdOpr, int stanodavacIdKor) {

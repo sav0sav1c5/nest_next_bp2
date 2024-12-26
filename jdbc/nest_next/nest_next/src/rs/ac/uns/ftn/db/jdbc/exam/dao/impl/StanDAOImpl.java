@@ -94,7 +94,7 @@ public class StanDAOImpl implements StanDAO {
 	}
 
     @Override
-    public List<KategorijaDTO> getAveragePriceByCategory(){
+    public List<KategorijaDTO> findProsecnaCenaPoKategorijama(){
         
     	List<KategorijaDTO> result = new ArrayList<>();
     	

@@ -8,8 +8,8 @@ import rs.ac.uns.ftn.db.jdbc.exam.model.Grad;
 
 public interface GradDAO extends CRUDDao<Grad, Integer> {
 	
-	List<NajcesceKategorijeStanovaDTO> findGradSaNajcescimKategorijamaStanova();
+	List<NajcesceKategorijeStanovaDTO> findNajcesceKategorijeStanovaPoGradovima();
 	
-	List<GradoviIBrojStanovaDTO>  getGradoviIBrojStanova();
+	List<GradoviIBrojStanovaDTO>  findGradoviIBrojStanova();
 
 }

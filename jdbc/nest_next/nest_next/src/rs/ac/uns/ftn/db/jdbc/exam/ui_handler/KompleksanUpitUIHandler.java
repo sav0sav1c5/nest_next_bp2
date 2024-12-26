@@ -1,10 +1,6 @@
 package rs.ac.uns.ftn.db.jdbc.exam.ui_handler;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 import rs.ac.uns.ftn.db.jdbc.exam.dto.NajcesceKategorijeStanovaDTO;
@@ -56,7 +52,7 @@ public class KompleksanUpitUIHandler {
         try {
         	int br = 1;
         	String prethodniGrad = "";
-            for (NajcesceKategorijeStanovaDTO najcesceKategorijeStanovaDTO : kompleksanUputService.getNajcesceKategorijeStanova()) {
+            for (NajcesceKategorijeStanovaDTO najcesceKategorijeStanovaDTO : kompleksanUputService.getNajcesceKategorijeStanovaPoGradovima()) {
             	
             	if (!najcesceKategorijeStanovaDTO.getNazivGr().equals(prethodniGrad)) {
             		System.out.printf("| %-5d %s%n", br++, najcesceKategorijeStanovaDTO.toString());

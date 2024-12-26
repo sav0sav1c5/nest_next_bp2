@@ -11,8 +11,8 @@ public class KompleksanUpitService {
 
 	private static final GradDAO gradDAO = new GradDAOImpl();
 	
-    public List<NajcesceKategorijeStanovaDTO> getNajcesceKategorijeStanova() throws SQLException {
-        return gradDAO.findGradSaNajcescimKategorijamaStanova();
+    public List<NajcesceKategorijeStanovaDTO> getNajcesceKategorijeStanovaPoGradovima() throws SQLException {
+        return gradDAO.findNajcesceKategorijeStanovaPoGradovima();
     }
 	
 }

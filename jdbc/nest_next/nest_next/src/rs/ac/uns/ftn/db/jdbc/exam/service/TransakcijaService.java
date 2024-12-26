@@ -26,7 +26,7 @@ public class TransakcijaService {
             }
 
             Stan stan = oglasavanjeDTO.getStan();
-            stan.setAdresaIdAdr(adresa.getIdAdr()); // Postavljanje ID adrese
+            stan.setAdresaIdAdr(adresa.getIdAdr());
             if (!stanDAO.saveTransactional(connection, stan)) {
                 connection.rollback();
                 return false;

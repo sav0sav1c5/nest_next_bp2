@@ -32,7 +32,7 @@ public class GradService {
 	}
 	
     public List<GradoviIBrojStanovaDTO> getGradoviIBrojStanova() throws SQLException {
-    	return gradDAO.getGradoviIBrojStanova();
+    	return gradDAO.findGradoviIBrojStanova();
     }
     
 }

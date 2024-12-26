@@ -7,7 +7,9 @@ public class Adresa {
 	private int rbrAdr;
 	private int gradIdGr;
 	
-	public Adresa() { }
+	public Adresa() { 
+		super();
+	}
 	
 	public Adresa(int idAdr, String ulicaAdr, int rbrAdr, int gradIdGr) {
 		super();

@@ -4,6 +4,11 @@ public class Zakupac extends Korisnik {
 
 	private String prefZak;
 	
+	public Zakupac(String prefZak) {
+		super();
+		this.prefZak = prefZak;
+	}
+
 	public Zakupac(int idKor, String imeKor, String prezimeKor, String emailKor, String tipKor, String prefZak) {
 		super(idKor, imeKor, prezimeKor, emailKor, tipKor);
 		this.prefZak = prefZak;
