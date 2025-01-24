@@ -1,0 +1,15 @@
+*.html linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.sql linguist-language=SQL
+*.java linguist-language=Java
+data_modeler/* linguist-detectable=true
+ddl_file/* linguist-detectable=true
+dml_file/* linguist-detectable=true
+er/* linguist-detectable=false
+jdbc/* linguist-detectable=true
+specification/* linguist-detectable=false
+*.h5 linguist-vendored
+*.geojson linguist-vendored
+*.bin linguist-vendored
+*.exe linguist-vendored
